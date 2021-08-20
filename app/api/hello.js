@@ -2,7 +2,6 @@ const handler = async (req, res) => {
   res.setHeader("Content-Type", "application/json")
   const timeout = parseInt(req.query.timeout)
   if (isNaN(timeout)) {
-    throw "error"
     return
   }
   console.log(timeout)
